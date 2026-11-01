@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NotifyHook" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/on_primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- 텍스트 기본 색상 -->
+        <item name="android:textColorPrimary">@color/on_surface</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:editTextColor">@color/on_surface</item>
+
+        <!-- Material 버튼 기본 스타일 -->
+        <item name="materialButtonOutlinedStyle">@style/Widget.NotifyHook.OutlinedButton</item>
+
+        <!-- 다이얼로그 스타일 -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.NotifyHook.Dialog</item>
+
+        <!-- TextInputLayout 색상 -->
+        <item name="boxStrokeColor">@color/divider</item>
+    </style>
+
+    <!-- 아웃라인 버튼 (토글 그룹용) -->
+    <style name="Widget.NotifyHook.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/toggle_button_text</item>
+        <item name="backgroundTint">@color/toggle_button_bg</item>
+        <item name="strokeColor">@color/divider</item>
+        <item name="rippleColor">@color/ripple</item>
+    </style>
+
+    <!-- 다이얼로그 테마 -->
+    <style name="ThemeOverlay.NotifyHook.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:textColorPrimary">@color/on_surface</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:background">@color/surface</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.NotifyHook.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.NotifyHook.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.NotifyHook.DialogButton</item>
+    </style>
+
+    <style name="Widget.NotifyHook.DialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <!-- 드롭다운 아이템 스타일 -->
+    <style name="Widget.NotifyHook.DropdownItem" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+</resources>
